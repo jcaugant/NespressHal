@@ -24,4 +24,9 @@ Les 2 premiers éléments servent juste à vous connecter sur votre compte. A au
 Le numéro de structure permet de construire l'API sur laquelle se base le script, de même que le nom de l'éditeur.
 Enfin, l'url du portail permet d'effectuer l'automatisation à partir du portail au sein duquel vous avez les droits.
 
+# Points importants
+- NespressHal est actuellement sur une version alpha, merci de me faire remonter les problèmes éventuels à julien.caugant@univ-amu.fr
+- L'application fonctionne moins bien quand elle est utilisée "en fond". Il vaut mieux la lancer quand vous suivez une visio ou vous absentez, afin que les processus puissent tourner de manière optimale
+- Enfin, le script sert uniquement à alimenter en texte intégral et ne sert pas à effectuer la curation des métadonnées renseignées. Le travail de curation et modération des administrateurs restent précieux et nécessaire!
+
 
