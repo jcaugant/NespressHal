@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.common.by import By
 import requests as rq, json, time
 from bs4 import BeautifulSoup as bs
@@ -23,7 +24,7 @@ def identify(login, password):
 
 # url = f"https://api.archives-ouvertes.fr/search/?q&wt=json&rows=250&fq=structId_i:{struct}}&fq=(submitType_s:notice%20AND%20openAccess_bool:(true))&fl=halId_s"
 # url = f"https://api.archives-ouvertes.fr/search/?q&wt=json&rows=250&fq=structId_i:{my_struct}&fq=(submitType_s:notice%20AND%20journalPublisher_s:%22MDPI%22)&fl=halId_s"
-url = f"https://api.archives-ouvertes.fr/search/?&wt=json&rows=200&fq=structId_i:198056&fq=(submitType_s:notice%20AND%20openAccess_bool:(true)%20AND%20journalPublisher_s:%22{review}%22)&fl=halId_s"
+url = f"https://api.archives-ouvertes.fr/search/?&wt=json&rows=200&fq=structId_i:{my_struct}&fq=(submitType_s:notice%20AND%20openAccess_bool:(true)%20AND%20journalPublisher_s:%22{review}%22)&fl=halId_s"
 req = rq.get(url)
 req = req.json()
 liste_id = []
@@ -31,13 +32,13 @@ for i in range(len(req['response']['docs'])):
     liste_id.append(req['response']['docs'][i]['halId_s'])
 print("Bienvenue sur NespressHal ! Votre login et votre mot de passe vont vous être demandés")
 print(" mais aucune information ne sera collectée ou conservée, pas d'inquiétude! ")
-print("Script créé par J. Caugant, Cellule Science Ouverte du SCD d'Aix-Marseille Université, sous licence...")
+print("Script créé par J. Caugant, Cellule Science Ouverte du SCD d'Aix-Marseille Université, sous licence GNU-GPL")
 
 
 for id in liste_id:
     options = Options()
     options.binary_location = r'C:\Program Files\Mozilla Firefox\firefox.exe'
-    driver = webdriver.Firefox(executable_path=r'geckodriver.exe', options=options)
+    driver = webdriver.Firefox(options=options)
     identify(my_login, my_pass)
     time.sleep(5)
     url = portail+"/"+id
