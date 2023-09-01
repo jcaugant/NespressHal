@@ -69,8 +69,6 @@ for id in liste_id:
         time.sleep(10)
         driver.find_element(By.NAME, "accept_licence").click()
         time.sleep(5)
-        driver.find_element(By.NAME, "accept_licence").click()
-        time.sleep(5)
         driver.find_element(By.ID, "submission-btn").click()
         time.sleep(15)
         driver.close()
