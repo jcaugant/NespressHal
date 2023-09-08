@@ -18,7 +18,7 @@ Il faut suivre ensuite l'installation de Python comme indiqué après
 4) Enfin, tapez la commande suivante : "pip install selenium requests bs4", pour installer les librairies nécessaires
 
 ## Via un Notebook Jupyter
-
+A venir!
 
 # Lancement
 Pour un lancement simple, exécutez le fichier appelé "nespresshal.cmd". Cela devrait automatiquement lancer le script Python.
