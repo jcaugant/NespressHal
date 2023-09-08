@@ -21,13 +21,13 @@ Il faut suivre ensuite l'installation de Python comme indiqué après
 A venir!
 
 # Lancement
-Pour un lancement simple, exécutez le fichier appelé "nespresshal.cmd". Cela devrait automatiquement lancer le script Python.
-Une fois lancée, l'application va vous demander 5 éléments : login Hal, Mot de passe, numéro de votre structure, l'url de votre portail et enfin le nom de l'éditeur dont vous souhaitez récupérer le texte.
-Les 2 premiers éléments servent juste à vous connecter sur votre compte. A aucun moment, ils se seront collectés ou conservés.
-Le numéro de structure permet de construire l'API sur laquelle se base le script, de même que le nom de l'éditeur.
-Pour trouver votre numéro de structure, il faut le récupérer dans le référentiel AureHal : (https://aurehal.archives-ouvertes.fr/structure/index)
-Pour récupérer le nom de l'éditeur, vous pouvez vous baser sur cette API : (https://api.archives-ouvertes.fr/search/?q=*%3A*&rows=0&wt=json&indent=true&facet=true&facet.field=journalPublisher_s)
-Enfin, l'url du portail permet d'effectuer l'automatisation à partir du portail au sein duquel vous avez les droits.
+- Pour un lancement simple, exécutez le fichier appelé "nespresshal.cmd". Cela devrait automatiquement lancer le script Python.
+- Une fois lancée, l'application va vous demander 5 éléments : login Hal, Mot de passe, numéro de votre structure, l'url de votre portail et enfin le nom de l'éditeur dont vous souhaitez récupérer le texte.
+- Les 2 premiers éléments servent juste à vous connecter sur votre compte. A aucun moment, ils se seront collectés ou conservés.
+- Le numéro de structure permet de construire l'API sur laquelle se base le script, de même que le nom de l'éditeur.
+- Pour trouver votre numéro de structure, il faut le récupérer dans le référentiel AureHal : (https://aurehal.archives-ouvertes.fr/structure/index)
+- Pour récupérer le nom de l'éditeur, vous pouvez vous baser sur cette API : (https://api.archives-ouvertes.fr/search/?q=*%3A*&rows=0&wt=json&indent=true&facet=true&facet.field=journalPublisher_s)
+- Enfin, l'url du portail permet d'effectuer l'automatisation à partir du portail au sein duquel vous avez les droits.
 
 # Points importants
 - NespressHal est actuellement sur une version alpha, merci de me faire remonter les problèmes éventuels à julien.caugant@univ-amu.fr
