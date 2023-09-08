@@ -7,20 +7,21 @@ Il nécessite une configuration particulière avant lancement, et le renseigneme
 L'application a été testée sur Windows uniquement pour le moment.
 
 # Configuration
-Pour que l'application fonctionne, il faut veiller à avoir tout d'abord une version de Python installée sur l'ordinateur, ou éventuellement la suite Anaconda avec le notebook Jupyter (https://www.anaconda.com/download). Vous devez également avoir le navigateur Firefox installé sur le poste.
+Pour que l'application fonctionne, il faut avoir le navigateur Firefox installé sur le poste.
+Il faut suivre ensuite l'installation de Python comme indiqué après
 
 # Installation
 ## Via l'invite de commandes Windows
+1) Ouvrir l'invite de commandes Windows (vous pouvez y accéder en appuyant simultanément sur le bouton Windows + R, en entrant le terme "cmd" et en appuyant ensuite sur la touche Entrée
+2) Une fois l'invite de commandes ouverte, tapez "python" puis Entrée. Vous serz inviter à installer Python sur votre poste via le Microsoft Store. Si cette étape ne fonctionne pas, il faut demander à votre service informatique d'installer manuellement Python.
+3) Une fois Python installé, entrez la commande suivante : "python -m ensurepip". Cela installera le logiciel pip, qui permet de récupérer les librairies tierces dont l'application a besoin pour fonctionner.
+4) Enfin, tapez la commande suivante : "pip install selenium requests bs4", pour installer les librairies nécessaires
 
 ## Via un Notebook Jupyter
 
 
 # Lancement
-Quand la configuration est terminée, vous allez pouvoir lancer l'application. 
-Si vous êtes sur Jupyter, vous avez juste à exécuter la première cellule pour que les librairies s'installent, redémarrer le noyau puis exécuter la seconde cellule et le programme s'exécutera.
-Si vous travaillez directement sous Python, lancez votre invite de commandes puis placez-vous dans le dossier où se trouvent les fichiers téléchargés précédemment, puis tapez la commande " pip install -r requirements.txt". Cela devrait installer les librairies nécessaires à la bonne exécution du script. Une fois cela fait, lancez nespresshal.py.
-Si l'installation des librairies tierces via le fichier "requirement.txt" ne fonctionne pas, lancez la commande suivante : "pip install requests selenium bs4"
-
+Pour un lancement simple, exécutez le fichier appelé "nespresshal.cmd". Cela devrait automatiquement lancer le script Python.
 Une fois lancée, l'application va vous demander 5 éléments : login Hal, Mot de passe, numéro de votre structure, l'url de votre portail et enfin le nom de l'éditeur dont vous souhaitez récupérer le texte.
 Les 2 premiers éléments servent juste à vous connecter sur votre compte. A aucun moment, ils se seront collectés ou conservés.
 Le numéro de structure permet de construire l'API sur laquelle se base le script, de même que le nom de l'éditeur.
@@ -29,8 +30,8 @@ Pour récupérer le nom de l'éditeur, vous pouvez vous baser sur cette API : (h
 Enfin, l'url du portail permet d'effectuer l'automatisation à partir du portail au sein duquel vous avez les droits.
 
 # Points importants
-- NespressHal est actuellement sur une version alpha, merci de me faire remonter les problèmes éventuels à julien.caugant@univ-amu.fr
-- L'application fonctionne moins bien quand elle est utilisée "en fond". Il vaut mieux la lancer quand vous suivez une visio ou vous absentez, afin que les processus puissent tourner de manière optimale
-- Enfin, le script sert uniquement à alimenter en texte intégral et ne sert pas à effectuer la curation des métadonnées renseignées. Le travail de curation et modération des administrateurs restent précieux et nécessaire!
+- NespressHal est actuellement sur une version alpha, merci de me faire remonter les problèmes éventuels à [julien.caugant@univ-amu.fr](http://mailto:julien.caugant@univ-amu.fr)
+- L'application perd en efficacité quand elle est utilisée "en fond" (c'est-à-dire, quand vous utilisez une autre application en même temps que le script). Il vaut mieux la lancer quand vous suivez une visio ou vous absentez, afin que les processus puissent tourner de manière optimale. Utiliser 2 écrans dont un permettant de faire tourner le script permet de l'exécuter sans dysfonctionnements.
+- Enfin, le script sert uniquement à alimenter en texte intégral et ne sert pas à effectuer la curation des métadonnées renseignées. Le travail de curation et modération des administrateurs reste précieux et nécessaire!
 
 
