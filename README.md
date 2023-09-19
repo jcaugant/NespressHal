@@ -31,7 +31,7 @@ A venir!
 
 # Points importants
 - NespressHal est actuellement sur une version alpha, merci de me faire remonter les problèmes éventuels à l'adresse julien.caugant@univ-amu.fr
-- L'application perd en efficacité quand elle est utilisée "en fond" (c'est-à-dire, quand vous utilisez une autre application en même temps que le script). Il vaut mieux la lancer quand vous suivez une visio ou vous absentez, afin que les processus puissent tourner de manière optimale. Utiliser 2 écrans dont un permettant de faire tourner le script permet de l'exécuter sans dysfonctionnements.
+- L'application perd en efficacité quand elle est utilisée "en tâche de fond" (c'est-à-dire, quand vous utilisez une autre application en même temps que le script). Il vaut mieux la lancer quand vous suivez une visio ou vous absentez, afin que les processus puissent tourner de manière optimale. Utiliser 2 écrans dont un permettant de faire tourner le script permet de l'exécuter sans dysfonctionnements.
 - Enfin, le script sert uniquement à alimenter en texte intégral et ne sert pas à effectuer la curation des métadonnées renseignées. Le travail de curation et modération des administrateurs reste précieux et nécessaire!
 
 
