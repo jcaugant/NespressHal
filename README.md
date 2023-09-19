@@ -1,5 +1,5 @@
 # NespressHal
-Script d'alimentation automatique des textes intégraux aux notices au sein de l'archive ouverte HAL
+Script d'ajout automatique des textes intégraux aux notices au sein de l'archive ouverte HAL
 
 # Présentation
 NespressHal est un script Python permettant d'ajouter le texte intégral aux notices au sein de l'archive ouverte HAL.
