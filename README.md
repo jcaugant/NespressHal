@@ -7,8 +7,8 @@ Il nécessite une configuration particulière avant lancement, et le renseigneme
 L'application a été testée sur Windows uniquement pour le moment.
 
 # Configuration
-Pour que l'application fonctionne, il faut avoir le navigateur Firefox installé sur le poste.
-Il faut suivre ensuite l'installation de Python comme indiqué après
+L'application nécessite l'installation du navigateur Firefox. 
+Il faut suivre ensuite l'installation de Python comme indiqué après.
 
 # Installation
 ## Via l'invite de commandes Windows
