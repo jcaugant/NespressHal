@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup as bs
 my_login = input("Entrez votre login HAL : ")
 my_pass = input("Entrez votre mot de passe HAL : ")
 my_struct = input("Entrez le numéro de votre structure : ")
-portail = input("Entrez l'url de votre portail HAL : ")
+portail = input("Entrez l'url de votre portail ou de votre collection HAL : ")
 review = input("Entrez le nom de la revue dont vous souhaitez ajouter le texte sur HAL : ")
 
 
