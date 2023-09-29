@@ -22,8 +22,6 @@ def identify(login, password):
     password.send_keys(my_pass)
     driver.find_element(By.NAME, "submit").click()
 
-# url = f"https://api.archives-ouvertes.fr/search/?q&wt=json&rows=250&fq=structId_i:{struct}}&fq=(submitType_s:notice%20AND%20openAccess_bool:(true))&fl=halId_s"
-# url = f"https://api.archives-ouvertes.fr/search/?q&wt=json&rows=250&fq=structId_i:{my_struct}&fq=(submitType_s:notice%20AND%20journalPublisher_s:%22MDPI%22)&fl=halId_s"
 url = f"https://api.archives-ouvertes.fr/search/?&wt=json&rows=200&fq=structId_i:{my_struct}&fq=(submitType_s:notice%20AND%20openAccess_bool:(true)%20AND%20journalPublisher_s:%22{review}%22)&fl=halId_s"
 req = rq.get(url)
 req = req.json()
